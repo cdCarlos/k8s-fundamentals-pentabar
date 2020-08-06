@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:frontend": "cd frontend/ && REACT_APP_FRONTEND_INSTANCE_ID=123456 npm start"
+    "start:frontend": "cd frontend/ && REACT_APP_FRONTEND_INSTANCE_ID=123456 npm start",
+    "build:images:frontend": "cd frontend/ && docker build -t k8sf-front ."
   },
   "repository": {
     "type": "git",
