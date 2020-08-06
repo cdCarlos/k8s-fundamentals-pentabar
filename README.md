@@ -17,6 +17,8 @@ $ npm run start:frontend
 
 ## Build Docker Images
 
+If using minkube make sure to run `eval $(minikube docker-env)` to configure the environment variables to fetch local images.
+
 ### Frontend
 
 ```bash
