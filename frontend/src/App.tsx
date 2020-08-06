@@ -1,28 +1,45 @@
-import './App.scss';
+import "./App.scss";
 
-import React from 'react';
+import React from "react";
 
-import logo from './logo.svg';
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Grid from "@material-ui/core/Grid";
+import Paper from "@material-ui/core/Paper";
+import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 
-function App() {
+import { AppBarComponent } from "./components/Header/AppBar/AppBar";
+
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      flexGrow: 1,
+    },
+    paper: {
+      padding: theme.spacing(2),
+      textAlign: "center",
+      color: theme.palette.text.secondary,
+      borderRadius: 0,
+      height: "100vh",
+    },
+  })
+);
+
+export function App() {
+  const classes = useStyles();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <AppBarComponent></AppBarComponent>
+      <CssBaseline />
+      <Grid container spacing={3}>
+        <Grid item xs={12}>
+          <Paper className={classes.paper}>
+            <p>
+              Frontend Instance ID: {process.env.REACT_APP_FRONTEND_INSTANCE_ID}
+            </p>
+          </Paper>
+        </Grid>
+      </Grid>
+    </React.Fragment>
   );
 }
-
-export default App;
