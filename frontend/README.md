@@ -1,2 +1,1 @@
-Kubernetes Essentials - Frontend Component
-======
+# Kubernetes Fundamentals - Frontend Component

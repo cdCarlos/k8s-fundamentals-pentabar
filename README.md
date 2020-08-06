@@ -1,13 +1,13 @@
-# Kubernetes Essentials - PentaBar
+# Kubernetes Fundamentals - PentaBar
 
-# Environment
+## Environment
 
 - Node.js: 12.18.3
 - NPM: 6.14.6
 
-# Usage
+## Usage
 
-## Frontend
+### Frontend
 
 To run the frontend application, run the following command:
 
@@ -15,9 +15,9 @@ To run the frontend application, run the following command:
 $ npm run start:frontend
 ```
 
-# Build Docker Images
+## Build Docker Images
 
-## Frontend
+### Frontend
 
 ```bash
 $ npm run build:images:frontend
