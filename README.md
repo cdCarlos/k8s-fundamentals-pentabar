@@ -1,5 +1,10 @@
 # Kubernetes Essentials - PentaBar
 
+# Environment
+
+- Node.js: 12.18.3
+- NPM: 6.14.6
+
 # Usage
 
 ## Frontend
