@@ -35,8 +35,24 @@ export function App() {
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <p>
-              Frontend Instance ID:{" "}
-              <b>{process.env.REACT_APP_FRONTEND_INSTANCE_ID || "Unknown"}</b>
+              Frontend POD ID:{" "}
+              <b>{process.env.REACT_APP_POD_NAME || "Unknown"}</b>
+            </p>
+            <p>
+              Frontend POD IP:{" "}
+              <b>{process.env.REACT_APP_POD_IP || "Unknown"}</b>
+            </p>
+            <p>
+              Frontend POD Namespace:{" "}
+              <b>{process.env.REACT_APP_POD_NAMESPACE || "Unknown"}</b>
+            </p>
+            <p>
+              Frontend Node Name:{" "}
+              <b>{process.env.REACT_APP_NODE_NAME || "Unknown"}</b>
+            </p>
+            <p>
+              Frontend Service Account:{" "}
+              <b>{process.env.REACT_APP_SERVICE_ACCOUNT || "Unknown"}</b>
             </p>
           </Paper>
         </Grid>
