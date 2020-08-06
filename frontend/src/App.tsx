@@ -35,7 +35,8 @@ export function App() {
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <p>
-              Frontend Instance ID: {process.env.REACT_APP_FRONTEND_INSTANCE_ID}
+              Frontend Instance ID:{" "}
+              <b>{process.env.REACT_APP_FRONTEND_INSTANCE_ID || "Unknown"}</b>
             </p>
           </Paper>
         </Grid>
