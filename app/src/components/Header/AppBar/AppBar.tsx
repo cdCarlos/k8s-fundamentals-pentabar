@@ -13,6 +13,7 @@ import Typography from "@material-ui/core/Typography";
 import LanguageIcon from "@material-ui/icons/Language";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import MenuIcon from "@material-ui/icons/Menu";
+import BookIcon from "@material-ui/icons/Book";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -76,6 +77,15 @@ export function AppBarComponent() {
                 target="_blank"
               >
                 <LinkedInIcon /> <span>LinkedIn</span>
+              </Link>
+            </MenuItem>
+            <MenuItem onClick={handleClose}>
+              <Link
+                href="https://www.pentalog.com/blog"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <BookIcon /> <span>Blog</span>
               </Link>
             </MenuItem>
           </Menu>

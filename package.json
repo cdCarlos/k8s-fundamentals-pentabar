@@ -8,11 +8,11 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install:frontend": "cd frontend/ && npm install",
-    "install": "npm run install:frontend",
-    "start:frontend": "cd frontend/ && npm start",
-    "build:images:frontend": "cd frontend/ && docker build -t k8sf-front .",
-    "build:images": "npm run build:images:frontend"
+    "install:app": "cd app/ && npm install",
+    "install": "npm run install:app",
+    "start:app": "cd app/ && npm start",
+    "build:images:app": "cd app/ && docker build -t k8sf-app .",
+    "build:images": "npm run build:images:app"
   },
   "repository": {
     "type": "git",
