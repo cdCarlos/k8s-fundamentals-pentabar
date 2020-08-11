@@ -9,6 +9,11 @@
 - [Deployment](#deployment)
   - [Build Docker Images](#build-docker-images)
     - [App](#app-1)
+  - [Deploy Application in Kubernetes Cluster](#deploy-application-in-kubernetes-cluster)
+    - [Get object status](#get-object-status)
+  - [Access App from browser](#access-app-from-browser)
+  - [Scale your application Up or Down](#scale-your-application-up-or-down)
+  - [Environment Clean Up](#environment-clean-up)
 
 ## Environment
 
