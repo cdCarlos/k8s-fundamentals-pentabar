@@ -19,6 +19,7 @@
 
 ### Requirements
 
+- VirtualBox/KVM driver
 - Node.js: 12.18.3
 - NPM: 6.14.6
 - Minikube: 1.12.1
@@ -56,10 +57,10 @@
 #### Create minikube cluster
 
 ```bash
-$ minikube start --cpus=8 --nodes=1 --profile=k8s-fundamentals --driver=docker
+$ minikube start --cpus=2 --nodes=1 --profile=k8s-fundamentals --driver=docker
 ```
 
-Once your profile has been created, set it as default profile for minkube:
+Once your profile has been created, set it as default profile for minikube:
 
 ```bash
 $ minikube profile k8s-fundamentals
@@ -69,7 +70,7 @@ $ minikube profile k8s-fundamentals
 
 ### App
 
-To run the app, run the following command:
+To run the app, run the following commands:
 
 ```bash
 $ npm run install
@@ -80,7 +81,7 @@ $ npm run start:app
 
 ### Build Docker Images
 
-> **IMPORTANT**: If using minkube make sure to run `eval $(minikube docker-env)` to configure the environment variables in your terminal to target your minikube cluster, otherwise kubernetes will not find your local images when deploying your resources.
+> **IMPORTANT**: When using minkube make sure to run `eval $(minikube docker-env)` to configure the environment variables in your terminal to target your minikube cluster, otherwise kubernetes will not find your local images when deploying your resources.
 
 #### App
 
