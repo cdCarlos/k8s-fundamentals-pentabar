@@ -72,6 +72,7 @@ $ minikube profile k8s-fundamentals
 To run the app, run the following command:
 
 ```bash
+$ npm run install
 $ npm run start:app
 ```
 
