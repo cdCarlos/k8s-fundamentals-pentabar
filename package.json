@@ -1,0 +1,31 @@
+{
+  "name": "k8s-fundamentals-pentabar",
+  "version": "1.0.0",
+  "description": "Kubernetes Fundamentals",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install:app": "cd app/ && npm install",
+    "install": "npm run install:app",
+    "start:app": "cd app/ && npm start",
+    "build:images:app": "cd app/ && docker build -t k8sf-app .",
+    "build:images": "npm run build:images:app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git clone https://cdcarlos@bitbucket.org/cdcarlos/k8-fundamentals-pentabar.git"
+  },
+  "keywords": [
+    "k8s",
+    "kubernetes",
+    "fundamentals"
+  ],
+  "author": "Carlos Daniel",
+  "license": "ISC",
+  "devDependencies": {
+    "create-react-app": "^3.4.1"
+  }
+}

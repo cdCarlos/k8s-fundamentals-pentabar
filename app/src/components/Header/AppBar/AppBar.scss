@@ -1,0 +1,9 @@
+a {
+  & > svg {
+    margin-top: 0px;
+    position: absolute;
+  }
+  & > span {
+    margin-left: 30px;
+  }
+}
